@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Amazing Alaska</title>
+        <link rel="shortcut icon" type="image/ico" href="img/icon-alaska.png">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <style>
+            header{
+                background-color: rgba(0,0,0,.7);
+                position: fixed;
+                z-index: 10;
+                top: 0;
+                left: 0;
+                width: 100%;
+                color: #fff;
+                padding: 35px 100px 20px;
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            header a{
+                text-decoration: none;
+                color: white;
+                opacity: .6;
+                cursor: pointer;
+            }
+            header a:hover{
+                opacity: 1;
+            }
+            header nav ul{
+                font-size: 18px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            header nav li{
+                margin: 0 6px;
+            }
+            header nav li:first-child{
+                margin-left: 0;
+            }
+            header nav li:last-child{
+                margin-right: 0;
+            }
+            @media(max-width:1000px){
+                header{
+                    text-align: center;
+                    flex-direction: column;
+                    padding: 20px 50px;
+                }
+                header img{
+                    width: 75%;
+                }
+                header nav{
+                    justify-content: space-around;
+                }
+                header h2{
+                    margin-bottom: 15px;
+                }
+            }
+
+        </style>    
+    </head>
+
+    <body id="top">
+        <header>
+            <h2><a href="#" target="_blank"><img src="img/logo-alaska.png" alt=""></a></h2>
+            <nav>
+                <ul>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#getting-around">Travel</a></li>
+                    <li><a href="#famous-quotes">Quotes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#social-media">Links</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ********************************* -->
+        <div id="hero">
+            <div class="background-image"></div>
+            <h1>Beautiful Alaska</h1>
+            <h3>Breathtaking Landscapes for Your Viewing Pleasure</h3>
+            <a href="#" class="btn" target="_blank">More My Systems</a>
+        </div>
+        <!-- ********************************* -->
+        <div id="about">
+            <h3 class="title">About Me</h3>
+            <div id="two-cols">
+                <div class="about-img"><img src="img/aboutme.jpg" alt="thumbs up"></div>
+                <div class="about-bio">
+                    <p>My name is Luis Felipe Vilella, I'm living in Fartura-SP and I'm studying in Bandeirantes-PR at UENP.</p>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+            <hr>
+        </div>
+        <!-- ********************************* -->
+        <div id="gallery" class="photo-gallery">
+            <h3 class="title">Gallery</h3>
+            <p>It is my firts gallery in WebPage, look it:</p>
+            <hr>
+            <ul class="grid">
+                <li class="small" style="background-image: url('img/Alaska-Hubbard-glacier.jpg');"></li>
+                <li class="large" style="background-image: url('img/alaska-glacier.jpg');"></li>
+                <li class="small" style="background-image: url('img/boreal.jpg');"></li>
+                <li class="large" style="background-image: url('img/boreal-alaska.jpg');"></li>
+            </ul>
+            <hr>
+        </div>
+        <!-- ********************************* -->
+        <div id="getting-around">
+            <h3 class="title">Ways of Traveling</h3>
+            <p>
+                Have many ways to go Alaska, but I will show you the better ways to you go there and like the travel.
+            </p>
+            <ul class="grid">
+                <li><i class="fas fa-plane ico"></i><h4>Airplane</h4><p>This ways is faster and you can see everything over</p></li>
+                <li><i class="fas fa-ship ico"></i><h4>Cruiser Ships</h4><p>This ways is enjoyer, because you see the ocean.</p></li>
+                <li><i class="fas fa-taxi ico"></i><h4>Taxis</h4><p>This ways is slower, but you see all road.</p></li>
+            </ul>
+        </div>
+        <!-- ********************************* -->
+        <div id="famous-quotes">
+            <hr>
+            <h3 class="title"><p>What Other Our Saying</p></h3>
+            <p class="portrait"><img src="img/halberteinstein.jpg" alt="Halbert Einstein" class="portrait-phots"></p>
+            <p class="quote">&ldquo;A imaginação é mais importante que a ciência, porque a ciência é limitada, ao passo que a imaginação abrange o mundo inteiro.&rdquo;</p>
+            <p class="author">&mdash; Halbert Einstein</p>
+            <p class="portrait"><img src="img/StephenHawking.jpg" alt="Stephen Hawking" class="portrait-phots"></p>
+            <p class="quote">&ldquo;Eu já reparei que até as pessoas que dizem que tudo é predeterminado, e que não podemos fazer nada para mudar isso, olham antes de atravessar a rua.&rdquo;</p>
+            <p class="author">&mdash; Stephen Hawking</p>
+            <hr>
+        </div>
+        <!-- ********************************* -->
+        <div id="contact">
+            <h3 class="title">My Studio Location</h3>
+            <section class="flexbox-section">
+                <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1834.873696398136!2d-50.361336312174636!3d-23.10634123432687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb955cd1fb4d3a53!2sPr%C3%A9dio+Central+-+Universidade+Estadual+do+Norte+do+Paran%C3%A1+-+Campus+Luiz+Meneghel!5e0!3m2!1spt-BR!2sbr!4v1565713589141!5m2!1spt-BR!2sbr" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </p>
+                <p>
+                    Rodovia BR - 369,<br>
+                    Bandeirantes - PR,<br>
+                    86360-000
+                </p>
+            </section>
+        </div>
+        <!-- ********************************* -->
+        <div id="contact-form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfm9Nl3BPit5fZCftW8VFDcVQ-SF1Nx-lZkrdVmUqOyal45rw/viewform?embedded=true" width="100%" height="1250" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </div>
+        <!-- ********************************* -->
+        <footer id="social-media">
+            <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+            </ul>
+            <!-- <p>&copy; <script>document.write(new Date().getFullYear());</script> This is my Website, not your !</p> -->
+            <p>&ldquo;Welcome to my Website !&rdquo; &mdash;Luis Felipe F. Vilella</p>
+        </footer>
+        <script type="text/javascript">
+            $(document).ready(function() {
+              $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+          
+                var target = this.hash;
+                var $target = $(target);
+          
+                $('html, body').stop().animate({
+                  'scrollTop': $target.offset().top - 100
+                }, 900, 'swing', function() {
+                  window.location.hash = target - 100;
+                });
+              });
+            });
+          </script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+.DS_Store
+
+**/static/img
+
+# Google Glass:
+google_glass/_media
+google_glass/_interface
+google_glass/_fonts
+google_glass/_textos
