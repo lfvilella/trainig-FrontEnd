@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Grid Layout</title>
+    <style>
+        section{
+            padding: 10px;
+            text-align: center; 
+        }
+        .graphs{
+            font-size: 100px;
+            line-height: 1;
+            margin: 7px 0;
+            text-align: center ;
+        }
+        .profile{
+            width: 50%;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            border: 4px solid #4f97d5;
+        }
+    </style>
+</head>
+<body>
+    <main id="container">
+        <header>
+            <h1>CSS GRID LAYOUT</h1>
+        </header>
+        <nav class="options">
+            <a href="#" target="_blank" class="options-link">Home</a>
+            <a href="#" target="_blank" class="options-link">Build Apps</a>
+            <a href="#" target="_blank" class="options-link">Build Games</a>
+            <a href="#" target="_blank" class="options-link">Build Websites</a>
+        </nav>
+        
+        <!-- ******************** -->
+
+        <div class="card" id="login">
+            <h2 class="card-title">LOG-IN <span style="font-size: 26px;">&#x1F601;&nbsp;</span></h2>
+            <section>
+                <form>
+                    <input type="text" placeholder="Username"><br>
+                    <input type="password" placeholder="Password"><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
+        
+        <!-- ******************** -->
+
+        <div class="card" id="enhance_your_career">
+            <h2 class="card-title">Enhance Your Career</h2>
+            <section>
+                <img class="section-img profile" src="static/img/pexels-photo-380769.jpeg" alt="">
+                <p>We bring to the table win-win survival strategies to ensure proactive dominatio
+                    n. At the end of the day a new normal that has evolved from generation X.</p>
+                <p><a class="btn" href="#">Learn More&#8230;</a></p>
+            </section>
+        </div>
+        
+        <!-- ******************** -->
+
+        <div class="card" id="important_stats">
+            <h2 class="card-title">Important Stats</h2>
+            <section>
+                <p>Capitalize on low hanging fruit to identify a ballpark value added activity to
+                    beta test. Override the digital divide with additional clickthroughs from DevOps.</p>
+                <p class="graphs">&#x1F4C8; &#128202;</p>
+                <br>
+                <p><a class="btn" href="#">Learn More&#8230;</a></p>
+            </section>
+        </div>
+        
+        <!-- ******************** -->
+
+        <div class="card-blue" id="build_apps">
+            <h2 class="card-title">Build Apps</h2>
+            <section>
+                <p>Organically grow efficiently extend granular markets view of innovation via wor
+                    kplace credibly iterate fully tested technologies.</p>
+                <img src="static/img/img_app.png" alt="">
+                <p><a class="btn" href="#">Learn More&#8230;</a></p>
+            </section>
+        </div>
+        
+        <!-- ******************** -->
+
+        <div class="card-blue" id="build_games">
+            <h2 class="card-title">Build Games</h2>
+            <section>
+                <p>If you deliver ultra-globally, you may have to iterate intuitively. We will a
+                    ggregate the capability of e-businesses to grow exponentially.</p>
+                <img src="static/img/img_game.png" alt="">
+                <p><a class="btn" href="#">Learn More&#8230;</a></p>
+            </section>
+        </div>
+        
+        <!-- ******************** -->
+
+        <div class="card-blue" id="build_websites">
+            <h2 class="card-title">Build Websites</h2>
+            <section>
+                <p>Dynamically B2C users after installed base benefits. Collaboratively visualize
+                    customer directed convergence without revolutionary ROI.</p>
+                <img src="static/img/img_web.png" alt="">
+                <p><a class="btn" href="#">Learn More&#8230;</a></p>
+            </section>
+        </div>
+        
+        <!-- ******************** -->
+
+        <footer><img src="static/img/logo_google.png" alt=""></footer>
+    </main>
+</body>
+</html>

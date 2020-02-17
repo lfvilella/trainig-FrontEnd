@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #131633;
+    color: #34495e;
+    line-height: 1.5;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+    margin: 0 auto;
+}
+
+#login{
+    grid-area: login;
+}
+
+#enhance_your_career{
+    grid-area: enhance_your_career;
+}
+
+#important_stats{
+    grid-area: important_stats;
+}
+
+#build_apps{
+    grid-area: build_apps;
+}
+
+#build_games{
+    grid-area: build_games;
+}
+
+#build_websites{
+    grid-area: build_websites;
+}
+
+header h1{
+    font-size: 4em;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #22638E;
+}
+.options{
+    width: 95%;
+    background-color: white;
+    padding: 10px;
+    border-top: 3px solid #3498db;
+    border-radius: 3px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.options-link{
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #3498db;
+}
+.options-link:hover{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.card{
+    background-color: white;
+}
+.card-blue{
+    background-color: #9ebcf5;
+}
+.card-title{
+    color: white;
+    background-color: #4f97d5;
+    font-size: 1.25em;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+input{
+    width: 85%;
+    color: blue;
+    background-color: aliceblue;
+    font-size: 1.25em;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section img{
+    max-width: 100%;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #3498db;
+    border-radius: 28px;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 2%;
+}
+.btn:hover{
+    background-color: #3cf0bd;
+}
+
+@media screen and (min-width:1100px){
+    main{
+        width: 90%;
+        max-width: 800px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 4vh auto auto 10vh;
+        grid-gap: 15px;
+        margin: 0 auto;
+    }
+    
+    #container{
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "login enhance_your_career important_stats"
+        "build_apps build_games build_websites"
+        "footer footer footer";
+    }
+
+    div{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    main{
+        width: 90%;
+        max-width: 800px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto  4vh auto auto auto 10vh;
+        grid-gap: 15px;
+        margin: 0 auto;
+    }
+    
+    #container{
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "login enhance_your_career"
+        "important_stats build_apps"
+        "build_games build_websites"
+        "footer footer";
+    }
+    .graphs{
+        font-size: 100px;
+        line-height: 1;
+        margin: 10px 0px;
+        text-align: center ;
+    }
+    .profile{
+        width: 50%;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        border: 4px solid #4f97d5;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    header h1{
+        font-size: 2.5em;
+        padding-top: 25px;
+    }
+
+    div{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media screen and (max-width:500px){
+    main{
+        width: 90%;
+        max-width: 800px;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 6vh auto auto auto auto auto auto 5vh;
+        grid-gap: 15px;
+        margin: 0 auto;
+    }
+    
+    #container{
+        grid-template-areas: 
+        "header"
+        "nav"
+        "login"
+        "enhance_your_career"
+        "important_stats"
+        "build_apps"
+        "build_games"
+        "build_websites"
+        "footer";
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    header h1{
+        font-size: 1.75em;
+        padding-top: 25px;
+    }
+    nav{
+        margin-top: 0;
+    }
+    .options{
+        font-size: 12px ;
+    }
+    footer{
+        margin-bottom: 100px;
+    }
+
+    div{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
