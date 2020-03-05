@@ -1,0 +1,101 @@
+body{
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;    
+}
+
+nav{
+    background-color: cadetblue;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+nav ul li{
+    margin: 0px 6px;
+    padding: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+    transition: .8s;
+    cursor: pointer;
+}
+nav ul li:hover{
+    background-color: black;
+}
+nav ul li:first-child{
+    margin-left: 0px;
+}
+nav ul li:last-child{
+    margin-right: 0px;
+}
+
+.center-container{
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 15px 0px;
+}
+
+.img-area{
+    background-image: url('img/background.png');
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.img-text{
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.text-intro{
+    color: gray;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 50px 0px 50px 0;
+}
+
+.single-service{
+    text-align: center;
+    margin-bottom: 32px;
+}
+.single-service p{
+    padding: 0px 16px;
+}
+
+@media(max-width:1050px){
+    .center-container{
+        max-width: 500px;
+    }
+}
+@media(max-width:700px){
+    .center-container{
+        max-width: 300px;
+    }
+    .img-text{
+        font-size: 30px;
+    }
+    nav ul li{
+        padding: 5px;
+        margin: auto;
+    }
+    nav ul li:last-child{
+        margin-right: 40px;
+    }
+}
