@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(219, 231, 231);
+}
+
+h1, h2{
+    text-align: center;
+    font-weight: bolder;
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0;
+    margin: 40px auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.center button {
+    margin: 8px;
+}
