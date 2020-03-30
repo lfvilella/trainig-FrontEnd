@@ -1,0 +1,114 @@
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('img/bg-img.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.os-phrases h2{
+    font-family: sans-serif;
+    font-size: 70px;
+    font-weight: 200;
+    width: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 14px;
+    text-align: center;
+}
+
+.os-phrases h2,
+.os-phrases h2 > span{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.os-phrases h2 > span{
+    margin: 0 15px;
+}
+
+.os-phrases h2 > span > span{
+    display: inline-block;
+    perspective: 1000px;
+    transform-origin: 50% 50%;
+}
+
+.os-phrases h2 > span > span > span{
+    display: inline-block;
+    color: hsla(0, 0%, 0%, 0);
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,0);
+    animation: OpeningSequence 5.2s linear forwards;
+}
+
+.os-phrases h2:nth-child(2) > span > span > span{
+    animation-delay: 5s;
+}
+.os-phrases h2:nth-child(3) > span > span > span{
+    animation-delay: 10s;
+}
+.os-phrases h2:nth-child(4) > span > span > span{
+    animation-delay: 15s;
+}
+.os-phrases h2:nth-child(5) > span > span > span{
+    font-size: 150px;
+    animation-delay: 21s;
+    animation-duration: 8s;
+}
+.os-phrases h2:nth-child(6) > span > span > span{
+    animation-delay: 30s;
+}
+.os-phrases h2:nth-child(7) > span > span > span{
+    animation-delay: 34s;
+}
+
+@keyframes OpeningSequence{
+    0%{
+        text-shadow: 0 0 50px white;
+        letter-spacing: 80px;
+        opacity: 0.2;
+        transform: rotateY(-90deg);
+    }
+
+    50%{
+        text-shadow: 0 0 1px white;
+        letter-spacing: 14px;
+        opacity: 0.8;
+        transform: rotateY(0deg);
+    }
+
+    85%{
+        text-shadow: 0 0 1px white;
+        opacity: 0.8;
+        transform: rotateY(0deg) translateZ(100px);
+    }
+
+    100%{
+        text-shadow: 0 0 10px white;
+        opacity: 0;
+        transform: translateZ(130px);
+        pointer-events: none;
+    }
+}
+
+.os-phrases h2:nth-child(8) > span > span > span{
+    font-size: 30px;
+    animation: fadeIn 4s linear 40s forwards;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        text-shadow: 0 0 50px white;
+    }
+    100%{
+        opacity: 0.8;
+        text-shadow: 0 0 1px white;
+    }
+}

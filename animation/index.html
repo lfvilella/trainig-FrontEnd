@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Cool Animation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="os-phrases" id="os-phrases"> 
+            <h2>HEY DUDE</h2>
+            <H2>LOOK</H2>
+            <H2>THIS</H2>
+            <H2>AWESOME ANIMATION</H2>
+            <H2>SEE YOU</H2>
+            <H2>BYE</H2>
+            <H2>THE END</H2>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+        })
+    </script>
+</body>
+
+</html>
