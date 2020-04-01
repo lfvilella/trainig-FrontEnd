@@ -3,12 +3,14 @@
     padding: 0;
 }
 
+
 /* ===========================
           NAVEGATION
 =============================*/
 .navbar {
     padding: 22px 0px !important;
     border-bottom: none !important;
+    transition: all 0.5s ease-in-out;
 }
 
 .navbar-inverse{
@@ -29,12 +31,16 @@
 
 .navbar-header a {
     padding: 7px 0 0 0;
+    opacity: 0.8;
+}
+.navbar-header a:hover {
+    opacity: 1;
 }
 
 .navbar-toggle {
     border: 1px solid white !important;
     transition: all 0.5s ease-in;
-    background-color: #000000 !important;
+    background-color: transparent !important;
 }
 
 .navbar-toggle:hover {
@@ -60,6 +66,15 @@
         width: 160px;
     }
 }
+
+
+/* ===========================
+  Navegation Background-Color
+=============================*/
+.secondary-bg{
+    background-color: #34495e !important;
+}
+
 
 /* ===========================
           Slider
@@ -222,4 +237,16 @@
         background-image: url('img/bg-sm-slide.jpg');
         background-size: auto;
     }
+}
+
+
+/* ===========================
+         OUR SERVICE
+=============================*/
+.service-wrap{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
 }
