@@ -82,7 +82,7 @@
 .slider{
     width: 100%;
     height: 800px;
-    background-image: url('img/bg-slide.jpg');
+    background-image: url('img/slider.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -243,10 +243,142 @@
 /* ===========================
          OUR SERVICE
 =============================*/
+.service-area{
+    margin-top: 30px;
+}
+
 .service-wrap{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     padding: 25px 35px;
     position: relative;
     transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+}
+
+.service-wrap::before, .service-wrap::after{
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background-color: #34495e;
+}
+
+.service-wrap::before{
+    top: -37px;
+    left: 100%;
+}
+.service-wrap:hover:before{
+    left: -27px;
+    opacity: 1;
+}
+
+.service-wrap::after{
+    right: 100%;
+    bottom: -37px;
+}
+.service-wrap:hover:after{
+    right: 0;
+    opacity: 1;
+}
+
+.service-wrap:hover{
+    color: white;
+}
+
+.service-icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.service-wrap:hover .service-icon i{
+    transform: rotate(360deg);
+}
+
+.service-wrap h3{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.service-wrap p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+/* ===========================
+          Works
+=============================*/
+.work{
+    margin-top: 25px;
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+
+.img-wrapper img{
+    transition: transform 0.5s ease;
+}
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+
+/* ===========================
+            Team
+=============================*/
+.team-member{
+    margin: 0 15px;
+    margin-top: 50px;
+}
+
+.team-member-info{
+    padding: 10px 0 30px 0;
+}
+
+h4.team-member-name{
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+h4.team-member-designation{
+    text-transform: capitalize;
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+ul.social-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.social-list li{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+ul.social-list i{
+    font-size: 17px;
+}
+
+.icon-gray i{
+    color: #64707b;
 }
