@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script language="javascript" src="script.js"></script>
+    <title>My Test Page</title>
+    <style>
+    *{
+        text-align: center;
+    }
+    hr{
+        width: 150px;
+        height: 2px;
+        background-color: #2196f3;
+        border: 0;
+        margin: 40px auto;
+    }
+    </style>
+</head>
+<body>
+    <hr>
+    <button onclick="mensage('User')">Type Here</button>
+    <hr>
+    <button onmouseleave="mensage_got('User')">I got you</button>
+    <hr>
+    <span id="sub-title">Look This</span>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <hr>
+    <form>
+        <input type="text" name="name" id="id_name" placeholder="Type your name here">
+        <input type="submit" onclick="checker_form()">
+    </form>
+    <hr>
+</body>
+</html>
