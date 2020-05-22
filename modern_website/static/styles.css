@@ -425,3 +425,51 @@ ul.social-list i{
 .testimonials .carousel-indicators{
     bottom: -50px;
 }
+
+
+/* ===========================
+             FAQ
+=============================*/
+#accordian .panel{
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#accordian .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+}
+
+#accordian .panel-title a{
+    display: block;
+    padding: 25px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: #34495e;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+#accordian .panel-title a::after,
+#accordian .panel-title a.collapsed::after{
+    content: "\f068";
+    font-family: fontawesome;
+    width: 40px;
+    height: 40px;
+    line-height: 32px;
+    border-radius: 50%;
+    background: #34495e;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border: 5px solid white;
+    position: absolute;
+    top: 10px;
+    left: -25px;
+}
+
