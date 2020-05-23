@@ -676,3 +676,64 @@ ul.social-list i{
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
+
+/* ===========================
+            Form
+=============================*/
+.contact-area{
+    margin-top: 15px;
+}
+
+.section-heading .border-bottom{
+    width: 50px;
+    height: 4px;
+    margin: 0 auto;
+    background-color: #4b4b4b;
+    border-radius: 10px;
+}
+
+.form-control{
+    border-color: #34495e !important;
+    box-shadow: 1px 2px 8px #34495ea6 !important;
+}
+
+.contact-form button.btn{
+    padding: 12px 43px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact-form button.btn:hover{
+    border: 2px solid #4b4b4b !important;
+}   
+
+.contact-infos{
+    margin-top: 70px;
+    margin-bottom: -30px;
+    padding: 45px 0 40px 0;
+    background-color: darkcyan;
+}
+
+.contact-infos .fa{
+    color: white;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.contact-infos p{
+    color: white;
+    margin-top: 15px;
+}
+
+@media(max-width:420px){
+    .contact-infos i.fa{
+        margin-top: 10px;
+    }
+    .contact-infos p{
+        margin-top: 5px;
+    }
+}
