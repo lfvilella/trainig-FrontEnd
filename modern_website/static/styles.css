@@ -61,6 +61,13 @@ body{
 }
 
 @media(max-width:600px){
+    .navbar-header .navbar-brand img{
+        position: absolute;
+        left: 20px;
+    }
+    .navbar-header .navbar-toggle{
+        margin-left: 45px;
+    }
     .navbar-nav li{
         margin-left: 20px;
     }
@@ -225,20 +232,6 @@ body{
     }
     100%{
         opacity: 1;
-    }
-}
-
-@media(max-width:760px){
-    .slider{
-        background-color: #000000;
-        background-image: url('img/bg-md-slide.jpg');
-        background-size: auto;
-    }
-}
-@media(max-width:420px){
-    .slider{
-        background-image: url('img/bg-sm-slide.jpg');
-        background-size: auto;
     }
 }
 
@@ -498,6 +491,13 @@ ul.social-list i{
     margin-top: -45px;
 }
 
+
+@media(max-width:420px){
+    #accordian .panel-title a::after,
+    #accordian .panel-title a.collapsed::after{
+        left: -16px;
+    }
+}
 
 
 /* ===========================
