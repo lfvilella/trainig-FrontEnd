@@ -556,7 +556,7 @@ ul.social-list i{
 }
 
 .latest-news-wrap{
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 40px;
 }
 
@@ -645,4 +645,34 @@ ul.social-list i{
     border: 1px solid #34495e;
     border-top-right-radius: 15px;
     background-color: transparent;
+}
+
+
+/* ===========================
+        COUNTER STATS
+=============================*/
+.stat{
+    background-image: url('img/cover-bg-1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 180px;
+    padding-bottom: 200px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.stat i{
+    font-size: 80px;
+}
+
+.stat-items h2{
+    font-weight: bolder;
+    font-size: 42px;
+    color: deepskyblue;
+}
+
+.stat-items p{
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
