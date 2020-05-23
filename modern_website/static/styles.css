@@ -652,7 +652,7 @@ ul.social-list i{
         COUNTER STATS
 =============================*/
 .stat{
-    background-image: url('img/cover-bg-1.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),url('img/cover-bg-1.jpg');
     background-position: center;
     background-attachment: fixed;
     padding-top: 180px;
