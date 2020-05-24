@@ -11,7 +11,7 @@ body{
           NAVEGATION
 =============================*/
 .navbar {
-    padding: 22px 0px !important;
+    padding: 24px 0px !important;
     border-bottom: none !important;
     transition: all 0.5s ease-in-out;
 }
@@ -28,7 +28,8 @@ body{
     transition: all 0.5s ease-in;
 }
 
-.navbar ul li a:hover {
+.navbar ul li a:hover,
+.navbar ul li a:focus {
     color: deepskyblue !important;
 }
 

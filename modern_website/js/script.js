@@ -60,4 +60,7 @@ jQuery(document).ready(function () {
         delay: 10,
         time: 2000
     });
+
+
+    $('a.smooths-croll').smoothScroll();
 });
