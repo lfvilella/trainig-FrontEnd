@@ -737,3 +737,60 @@ ul.social-list i{
         margin-top: 5px;
     }
 }
+
+
+/* ===========================
+            Map
+=============================*/
+.maps{
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+
+/* ===========================
+            Footer
+=============================*/
+.footer {
+    background-image: url('img/Black-Wood-Footer-Background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 145px;
+    padding-bottom: 120px;
+}
+
+.social-icon a{
+    margin: 0 16px 20px 16px;
+    display: inline-block;
+}
+
+.footer .fa{
+    font-size: 30px;
+    color: deepskyblue;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    line-height: 2;
+    border: 10px solid #34495e;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+}
+.social-icon a:hover .fa{
+    border-color: white;
+    transform: rotate(360deg);
+}
+
+.copyright{
+    color: white;
+}
+
+.copyright .border-bottom{
+    background-color: white;
+    width: 50px;
+    height: 3px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
