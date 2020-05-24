@@ -42,14 +42,14 @@ jQuery(document).ready(function () {
         smartSpeed: 700,
         loop: true,
         autoplayHoverPause: true,
-        responsive:{
-            0:{
+        responsive: {
+            0: {
                 items: 1
             },
-            480:{
+            480: {
                 items: 2
             },
-            768:{
+            768: {
                 items: 3
             },
         }
@@ -62,5 +62,18 @@ jQuery(document).ready(function () {
     });
 
 
-    $('a.smooths-croll').smoothScroll();
+    $(document).ready(function () {
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top - 100
+            }, 900, 'swing', function () {
+                window.location.hash = target - 100;
+            });
+        });
+    });
 });
