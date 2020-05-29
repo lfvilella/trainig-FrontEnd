@@ -63,7 +63,7 @@ jQuery(document).ready(function () {
 
 
     $(document).ready(function () {
-        $('a[href^="#"]').on('click', function (e) {
+        $('a[href^="#"].nav-btnlink').on('click', function (e) {
             e.preventDefault();
 
             var target = this.hash;
